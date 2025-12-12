@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — MyBiz</title>
+  <meta name="description" content="Contact MyBiz — get in touch for questions or services.">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="./">MyBiz Blog</a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false">☰</button>
+      <nav class="nav" id="mainNav">
+        <a href="./">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact Us</h1>
+
+    <p>If you have questions or want to collaborate, send a message using this form.</p>
+
+    <form id="contactForm" action="mailto:your-email@example.com" method="post" enctype="text/plain" novalidate>
+      <label for="name">Full Name</label>
+      <input id="name" name="name" type="text" placeholder="Your name">
+      <span class="error" id="err-name"></span>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com">
+      <span class="error" id="err-email"></span>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
+      <span class="error" id="err-message"></span>
+
+      <button type="submit">Send Message</button>
+      <div class="success" id="form-result"></div>
+    </form>
+  </main>
+
+  <footer class="site-footer container">
+    <p>&copy; <span id="year"></span> Prajwal Mali</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
